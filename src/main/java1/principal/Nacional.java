@@ -4,16 +4,29 @@ public class Nacional {
 
 	private String marca;
 	private String modelo;
-	private String año;
+	private String anio;
 	private String placa;
 	private int kilometraje;
+	private String codigo;
 
-	public Nacional(String m, String mm, String a, String pl){
-		
+	public Nacional(String m, String mm, String a, String pl, int kl, String cd) {
+		marca = m;
+		modelo = mm;
+		anio = a;
+		placa = pl;
+		kilometraje = kl;
+		codigo = cd;
+
 	}
 
-	
-	
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
 	public String getMarca() {
 		return marca;
 	}
@@ -30,12 +43,12 @@ public class Nacional {
 		this.modelo = modelo;
 	}
 
-	public String getAño() {
-		return año;
+	public String getAnio() {
+		return anio;
 	}
 
-	public void setAño(String año) {
-		this.año = año;
+	public void setAnio(String anio) {
+		this.anio = anio;
 	}
 
 	public String getPlaca() {

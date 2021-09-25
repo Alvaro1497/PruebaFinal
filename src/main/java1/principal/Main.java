@@ -6,10 +6,14 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		Scanner sc2 = new Scanner(System.in);
 		int opcion;
-		String T1, T2, T3, T4;
-		int T5;
-		String dentro;
+		String E1, E2, E3, E4 , E6;
+		int E5;
+		String teclado;
+		int pocicionDisponible = 0;
+		Nacional vector[] = new Nacional[2];
+		
 		do {
 			System.out.println("CONCESIONARIO AMBACAR");
 			System.out.println("Escoja opcion: ");
@@ -21,31 +25,41 @@ public class Main {
 			opcion = sc.nextInt();
 
 			if (opcion == 1) {
-				System.out.println("seleccioneuna opcion");
-				System.out.println("a)Auto Nacional");
-				System.out.println("b)Auto Importado ");
-				dentro = sc.nextLine();
-				if (dentro.equals("a")) {
-					System.out.println(" ingrese los datos");
+				
+				System.out.println(" a)Auto Nacional");
+				System.out.println(" b)Auto Importado ");
+				teclado = sc2.nextLine();
+				
+	
+				if (teclado.equals("a")) {
+					System.out.println("ingrese los datos");
 					System.out.println("ingrese Marca");
-					T1 = sc.nextLine();
+					E1 = sc2.nextLine();
 					System.out.println("ingrese Modelo");
-					T2 = sc.nextLine();
+					E2 = sc2.nextLine();
 					System.out.println("ingrese Año fabricación");
-					T3 = sc.nextLine();
+					E3 = sc2.nextLine();
 					System.out.println("ingrese Placa");
-					T4 = sc.nextLine();
+					E4 = sc2.nextLine();
 					System.out.println("Kilometraje ");
-					T5 = sc.nextInt();
+					E5 = sc2.nextInt();
+					System.out.println("ingrese codigo nacional ");
+					E6 = sc2.nextLine();
 					
+					vector[pocicionDisponible] = new  Nacional(E1, E2, E3, E4, E5, E6);
+					pocicionDisponible++;
 
 				}
-				if (dentro.equals("b")) {
+				
+				if (teclado.equals("b")) {
 					
 				}
-			}
+				}
+				
+			
+			
 
-		} while (opcion != 5);
+		} while ((opcion == 5));
 
 	}
 
