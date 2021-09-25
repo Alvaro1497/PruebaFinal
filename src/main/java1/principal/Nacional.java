@@ -68,6 +68,12 @@ public class Nacional {
 		this.codigo = codigo;
 	}
 
+	@Override
+	public String toString() {
+		return "Nacional [marca=" + marca + ", modelo=" + modelo + ", anio=" + anio + ", placa=" + placa
+				+ ", kilometraje=" + kilometraje + ", codigo=" + codigo + "]";
+	}
+
 	
 
 	

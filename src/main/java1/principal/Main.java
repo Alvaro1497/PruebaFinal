@@ -93,10 +93,29 @@ public class Main {
 							System.out.println(vector[i].getModelo() + vector[i].getMarca() + vector[i].getKilometraje()
 									+ vector[i].getPlaca());
 						}
+
 					}
 
 				}
+				if (teclado2.equals(vector2)) {
+					for (int i = 0; i < vector.length; i++) {
+						if (vector2[i] != null) {
+							System.out.println(vector2[i].getMarca() + vector2[i].getModelo()
+									+ vector2[i].getKilometraje() + vector2[i].getPlaca());
 
+						}
+
+					}
+				}
+				if(!teclado2.equals(vector2)||!teclado2.equals(vector)) {
+					System.out.println("no se encontro placa");
+					
+				}
+
+			}
+			
+			if (opcion == 3) {
+				
 			}
 
 		} while ((opcion == 5));
